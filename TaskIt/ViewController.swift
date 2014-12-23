@@ -50,12 +50,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         // refactor the above with a closure
         
+        tableView.reloadData()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
         baseArray[0] = baseArray[0].sorted {
             (taskOne:TaskModel, taskTwo:TaskModel) -> Bool in
             // comparison logic here
             return taskOne.date.timeIntervalSince1970 < taskTwo.date.timeIntervalSince1970
         }
-        
         tableView.reloadData()
     }
 
