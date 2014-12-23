@@ -17,6 +17,7 @@
 		962BA72B1A47CAB5003D8290 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962BA72A1A47CAB5003D8290 /* TaskModel.swift */; };
 		962BA72F1A47CC9C003D8290 /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962BA72E1A47CC9C003D8290 /* TaskDetailViewController.swift */; };
 		962BA7311A47D1F9003D8290 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962BA7301A47D1F9003D8290 /* Date.swift */; };
+		B11A371E1A48BBE600F21F95 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11A371D1A48BBE600F21F95 /* AddTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		962BA72A1A47CAB5003D8290 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		962BA72E1A47CC9C003D8290 /* TaskDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
 		962BA7301A47D1F9003D8290 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		B11A371D1A48BBE600F21F95 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				962BA7081A47A57B003D8290 /* AppDelegate.swift */,
 				962BA70A1A47A57B003D8290 /* ViewController.swift */,
 				962BA72E1A47CC9C003D8290 /* TaskDetailViewController.swift */,
+				B11A371D1A48BBE600F21F95 /* AddTaskViewController.swift */,
 				962BA72A1A47CAB5003D8290 /* TaskModel.swift */,
 				962BA7281A47C269003D8290 /* TaskCell.swift */,
 				962BA7301A47D1F9003D8290 /* Date.swift */,
@@ -173,6 +176,7 @@
 				TargetAttributes = {
 					962BA7021A47A57B003D8290 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Y739KY7P99;
 					};
 					962BA7171A47A57B003D8290 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -230,6 +234,7 @@
 				962BA72B1A47CAB5003D8290 /* TaskModel.swift in Sources */,
 				962BA7091A47A57B003D8290 /* AppDelegate.swift in Sources */,
 				962BA72F1A47CC9C003D8290 /* TaskDetailViewController.swift in Sources */,
+				B11A371E1A48BBE600F21F95 /* AddTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,9 +359,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TaskIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -364,9 +372,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TaskIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -423,6 +434,7 @@
 				962BA7241A47A57B003D8290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		962BA7251A47A57B003D8290 /* Build configuration list for PBXNativeTarget "TaskItTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +443,7 @@
 				962BA7271A47A57B003D8290 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
